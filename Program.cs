@@ -20,7 +20,7 @@ namespace ConsoleApp1
         {
             if (diagnosticListener.Name == "HttpHandlerDiagnosticListener")
             {
-                var subscription = diagnosticListener.SubscribeWithAdapter(this, (s)=>true); // Works OK
+                var subscription = diagnosticListener.SubscribeWithAdapter(this, (s)=>true); // No HttpRequestOut events ((
                 //var subscription = diagnosticListener.Subscribe(this); // Works OK
                 _subscriptions.Add(subscription);
             }
